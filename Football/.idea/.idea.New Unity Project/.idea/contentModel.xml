@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\unity\EntityComponentSystemSamples-master\Physics\New Unity Project" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Scripts" t="Include">
+          <e p="Ball.cs" t="Include" />
+          <e p="Game.cs" t="Include" />
+          <e p="Parabola.cs" t="Include" />
+        </e>
+      </e>
+      <e p="Library" t="ExcludeRecursive" />
+      <e p="New Unity Project.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
+    </e>
+    <e p="C:\Users\i.adzhikemalov\.Rider2018.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\i.adzhikemalov\.Rider2018.3\system\resharper-host\Temp\ReSharperHost\v183\SolutionCaches\_New Unity Project.-1531561812.00" t="ExcludeRecursive" />
+  </component>
+</project>

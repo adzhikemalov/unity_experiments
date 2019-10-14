@@ -3,8 +3,9 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -19,12 +20,13 @@ MonoBehaviour:
   m_version: 1
   m_description: 
   m_id: ff7100de-2dec-4418-a529-e0f2e480aab6
-  m_lastModified: 131982933884465388
+  m_lastModified: 132155176125873414
 --- !u!114 &114139957729687128
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -78,12 +80,14 @@ MonoBehaviour:
   m_graphId: ff7100de-2dec-4418-a529-e0f2e480aab6
   m_id: 48fb4597-906b-484c-a4fe-cbec186ef16c
   m_name: Start
+  m_notes: 
   ErrorNodeIsNotConnected: 0
 --- !u!114 &114205034835907004
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -156,6 +160,7 @@ MonoBehaviour:
   m_graphId: ff7100de-2dec-4418-a529-e0f2e480aab6
   m_id: 92e19478-d2b6-4736-8d3b-89617f941b72
   m_name: Main Menu
+  m_notes: 
   m_onEnterShowViews:
   - Category: Example
     InstantAction: 0
