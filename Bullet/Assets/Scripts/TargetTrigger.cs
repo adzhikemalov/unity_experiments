@@ -5,19 +5,18 @@ using UnityEngine;
 
 public class TargetTrigger : MonoBehaviour
 {
+    public Target Target;
     public Rigidbody2D NestedRigidbody;
-    // Start is called before the first frame update
-    private bool _alreadyHit;
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (_alreadyHit)
+        if (!Target || !Target.IsHitable)
             return;
         
         if (NestedRigidbody)
         {
             if (other.CompareTag("Bullet"))
             {
-                _alreadyHit = true;
+                Target.IsHitable = false;
                 var rb = other.gameObject.GetComponent<Rigidbody2D>();
                 NestedRigidbody.AddForceAtPosition(rb.velocity*25, other.gameObject.transform.position);
             }

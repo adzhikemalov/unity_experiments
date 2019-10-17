@@ -5,6 +5,8 @@ using UnityEngine.Serialization;
 
 public class Bullet : MonoBehaviour
 {
+    public int BounceCount = 10;
+    public int Lifetime = 5;
     public int speed = 15;
     private Rigidbody2D _rigidbody2D;
 
@@ -13,8 +15,20 @@ public class Bullet : MonoBehaviour
         if (_rigidbody2D == null)
             _rigidbody2D = GetComponent<Rigidbody2D>();
         _rigidbody2D.velocity = force.normalized * speed;
+        StartCoroutine(nameof(StartRemoveBullet));
     }
-    
+
+    private IEnumerator StartRemoveBullet()
+    {
+        yield return new WaitForSeconds(5);
+        RemoveBullet();
+    }
+
+    private void RemoveBullet()
+    {
+        Destroy(gameObject);
+    }
+
     private Vector2 _velocity;
     private Vector2 _lastPos;
     void FixedUpdate ()
@@ -24,6 +38,8 @@ public class Bullet : MonoBehaviour
         
         _velocity = pos2D - _lastPos;
         _lastPos = pos2D;
+        if (BounceCount == 0)
+            RemoveBullet();
     }
  
     private void OnCollisionEnter2D(Collision2D col)
@@ -33,5 +49,7 @@ public class Bullet : MonoBehaviour
  
         Vector3 R = Vector3.Reflect(V, N).normalized;
         _rigidbody2D.velocity = new Vector2(R.x, R.y).normalized * speed;
+
+        BounceCount--;
     }
 }
