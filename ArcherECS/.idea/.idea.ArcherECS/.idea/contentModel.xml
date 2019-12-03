@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\unity\Archer\ArcherECS" t="IncludeRecursive">
+      <e p="ArcherECS.sln" t="IncludeFlat" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Scripts" t="Include">
+          <e p="BasicCharacter.cs" t="Include" />
+          <e p="CameraController.cs" t="Include" />
+          <e p="Components" t="Include">
+            <e p="ApplyDamageComponent.cs" t="Include" />
+            <e p="BoxCollisionComponent.cs" t="Include" />
+            <e p="BulletComponent.cs" t="Include" />
+            <e p="CircleCollisionComponent.cs" t="Include" />
+            <e p="CurrentTargetComponent.cs" t="Include" />
+            <e p="DestroyComponent.cs" t="Include" />
+            <e p="EnemyComponent.cs" t="Include" />
+            <e p="HealthComponent.cs" t="Include" />
+            <e p="LifeTimeComponent.cs" t="Include" />
+            <e p="MovingComponent.cs" t="Include" />
+            <e p="PlayerComponent.cs" t="Include" />
+          </e>
+          <e p="Conversion" t="Include">
+            <e p="BoundConversion.cs" t="Include" />
+            <e p="EnemyConversion.cs" t="Include" />
+            <e p="PlayerConversion.cs" t="Include" />
+          </e>
+          <e p="Fake3DSprite.cs" t="Include" />
+          <e p="Fake3DSpriteRenderer.cs" t="Include" />
+          <e p="GameSettings.cs" t="Include" />
+          <e p="GrassFader.cs" t="Include" />
+          <e p="Systems" t="Include">
+            <e p="CollisionSystem.cs" t="Include" />
+            <e p="DamageSystem.cs" t="Include" />
+            <e p="DrawBulletsSystem.cs" t="Include" />
+            <e p="DrawCollidersSystem.cs" t="Include" />
+            <e p="DrawHpBarSystem.cs" t="Include" />
+            <e p="KeyBoardInputSystem.cs" t="Include" />
+            <e p="LifeTimeSystem.cs" t="Include" />
+            <e p="MovementSystem.cs" t="Include" />
+            <e p="PlayerShootingSystem.cs" t="Include" />
+            <e p="SelectTargetSystem.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Shaders" t="Include">
+          <e p="OutlineSprite.shader" t="Include" />
+          <e p="ToonShading.shader" t="Include" />
+        </e>
+      </e>
+      <e p="Library" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
+    </e>
+    <e p="C:\Users\i.adzhikemalov\.Rider2018.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\i.adzhikemalov\.Rider2018.3\system\resharper-host\Temp\ReSharperHost\v183\SolutionCaches\_ArcherECS.102312527.00" t="ExcludeRecursive" />
+  </component>
+</project>

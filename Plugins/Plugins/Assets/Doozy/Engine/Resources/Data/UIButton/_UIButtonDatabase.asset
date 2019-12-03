@@ -17,6 +17,8 @@ MonoBehaviour:
   - Custom
   - Example
   - General
+  - MyTest
   Categories:
   - {fileID: 11400000, guid: 40f9e81ff80114a47a3721228ba749ed, type: 2}
   - {fileID: 11400000, guid: f32ced32ee97a7741bb663df23391e97, type: 2}
+  - {fileID: 11400000, guid: b8829e844f582d643a35e8c9355023d8, type: 2}
