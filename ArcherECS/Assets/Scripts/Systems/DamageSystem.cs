@@ -17,6 +17,11 @@ namespace Systems
                     {
                         EntityManager.AddComponent<DestroyComponent>(entity);
                     }
+
+                    if (damage.MakeInvulnerable)
+                    {
+                        EntityManager.AddComponentData(entity, new InvulComponent{InvulTime = 1f});
+                    }
                     PostUpdateCommands.RemoveComponent<ApplyDamageComponent>(entity);
                 });
         }

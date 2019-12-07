@@ -5,5 +5,6 @@ namespace Components
 {
     public struct BulletComponent:IComponentData
     {
+        public int test;
     }
 }

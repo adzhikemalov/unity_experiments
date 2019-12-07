@@ -35,6 +35,7 @@ namespace Systems
                         _manager.AddComponentData(entity, new Translation{Value = playerPoisition});
                         _manager.AddComponentData(entity, new BulletComponent());
                         _manager.AddComponentData(entity, new LifeTimeComponent{Time = 5f});
+                        _manager.AddComponentData(entity, new CircleCollisionComponent{Radius = 0.05f});
                     });
                 });
                 _lastShootTime = 0;
