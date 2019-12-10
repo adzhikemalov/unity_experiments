@@ -15,7 +15,6 @@ namespace Systems
                 PostUpdateCommands.RemoveComponent<CurrentTargetComponent>(entity);
             });
             var nearestEnemy = Entity.Null;
-            var nearestEnemyPosition = new float3();
             Entities.WithAll<PlayerComponent>().WithAll<Translation>().ForEach((ref Translation translation) =>
             {
                 var minDistance = float.MaxValue;
@@ -28,14 +27,12 @@ namespace Systems
                     {
                         nearestEnemy = enemy;
                         minDistance = currentDistance;
-                        nearestEnemyPosition = enemyPos;
                     }
                 });
                 
                 if (nearestEnemy != Entity.Null)
                 {
                     PostUpdateCommands.AddComponent<CurrentTargetComponent>(nearestEnemy);
-                    Debug.DrawLine(playerPos, nearestEnemyPosition);
                 }
             });
         }

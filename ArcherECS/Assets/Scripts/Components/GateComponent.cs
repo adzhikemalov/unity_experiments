@@ -2,7 +2,7 @@ using Unity.Entities;
 
 namespace Components
 {
-    public class GateComponent:IComponentData
+    public struct GateComponent:IComponentData
     {
         
     }

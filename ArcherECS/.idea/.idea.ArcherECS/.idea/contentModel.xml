@@ -5,8 +5,32 @@
     <e p="C:\Users\i.adzhikemalov\.Rider2018.3\system\resharper-host\Temp\ReSharperHost\v183\SolutionCaches\_ArcherECS.437055707.00" t="ExcludeRecursive" />
     <e p="C:\Users\i.adzhikemalov\unity_experiments\ArcherECS" t="IncludeRecursive">
       <e p="ArcherECS.sln" t="IncludeFlat" />
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Joystick Pack" t="Include">
+          <e p="Examples" t="Include">
+            <e p="JoystickPlayerExample.cs" t="Include" />
+            <e p="JoystickSetterExample.cs" t="Include" />
+          </e>
+          <e p="Scripts" t="Include">
+            <e p="Base" t="Include">
+              <e p="Joystick.cs" t="Include" />
+            </e>
+            <e p="Editor" t="Include">
+              <e p="DynamicJoystickEditor.cs" t="Include" />
+              <e p="FloatingJoystickEditor.cs" t="Include" />
+              <e p="JoystickEditor.cs" t="Include" />
+              <e p="VariableJoystickEditor.cs" t="Include" />
+            </e>
+            <e p="Joysticks" t="Include">
+              <e p="DynamicJoystick.cs" t="Include" />
+              <e p="FixedJoystick.cs" t="Include" />
+              <e p="FloatingJoystick.cs" t="Include" />
+              <e p="VariableJoystick.cs" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="Scripts" t="Include">
           <e p="BasicCharacter.cs" t="Include" />
           <e p="CameraController.cs" t="Include" />
@@ -14,6 +38,7 @@
             <e p="ApplyDamageComponent.cs" t="Include" />
             <e p="BoxCollisionComponent.cs" t="Include" />
             <e p="BulletComponent.cs" t="Include" />
+            <e p="ChargeComponent.cs" t="Include" />
             <e p="CircleCollisionComponent.cs" t="Include" />
             <e p="CurrentTargetComponent.cs" t="Include" />
             <e p="DestroyComponent.cs" t="Include" />
@@ -42,7 +67,10 @@
             <e p="DrawBulletsSystem.cs" t="Include" />
             <e p="DrawCollidersSystem.cs" t="Include" />
             <e p="DrawHpBarSystem.cs" t="Include" />
+            <e p="EnemyMovingSystem.cs" t="Include" />
+            <e p="GateControlSystem.cs" t="Include" />
             <e p="InvulTimeSystem.cs" t="Include" />
+            <e p="JoystickInputSystem.cs" t="Include" />
             <e p="KeyBoardInputSystem.cs" t="Include" />
             <e p="LifeTimeSystem.cs" t="Include" />
             <e p="MovementSystem.cs" t="Include" />
