@@ -63,6 +63,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Flat Screen Transitions\Scripts\FSTDemoManager.cs" />
+    <Compile Include="Assets\Flat Screen Transitions\Scripts\LaunchURL.cs" />
     <Compile Include="Assets\Joystick Pack\Examples\JoystickPlayerExample.cs" />
     <Compile Include="Assets\Joystick Pack\Examples\JoystickSetterExample.cs" />
     <Compile Include="Assets\Joystick Pack\Scripts\Base\Joystick.cs" />
@@ -107,8 +109,9 @@
     <Compile Include="Assets\Scripts\Systems\KeyboardInputSystem.cs" />
     <Compile Include="Assets\Scripts\Systems\LifeTimeSystem.cs" />
     <Compile Include="Assets\Scripts\Systems\MovementSystem.cs" />
+    <Compile Include="Assets\Scripts\Systems\PlayerSelectTargetSystem.cs" />
     <Compile Include="Assets\Scripts\Systems\PlayerShootingSystem.cs" />
-    <Compile Include="Assets\Scripts\Systems\SelectTargetSystem.cs" />
+    <None Include="Assets\Flat Screen Transitions\Read Me.txt" />
     <None Include="Assets\Shaders\OutlineSprite.shader" />
     <None Include="Assets\Shaders\ToonShading.shader" />
     <Reference Include="Unity.Timeline.Editor">

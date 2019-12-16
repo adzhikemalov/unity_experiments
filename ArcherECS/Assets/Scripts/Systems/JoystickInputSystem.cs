@@ -26,9 +26,10 @@ namespace Systems
             });
  
             var move = new float3(0,1,0) * GameSettings.JoystickInstance.Vertical + new float3(1,0,0) * GameSettings.JoystickInstance.Horizontal;
-            move = move * _moveSpeed;
+          
             if (!move.Equals(float3.zero))
-            {
+            {  
+                move = math.normalize(move) * _moveSpeed;
                 Entities.WithAll<PlayerComponent>().ForEach((Entity entity) =>
                 {
                     PostUpdateCommands.AddComponent(entity, new MovingComponent{Velocity = move});

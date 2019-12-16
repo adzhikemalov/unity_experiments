@@ -59,11 +59,11 @@ public class Movement : MonoBehaviour
         Vector2 dir = new Vector2(x, y);
 
         Walk(dir);
-        anim.SetHorizontalMovement(x, y, rb.velocity.y);
+        if (anim)anim.SetHorizontalMovement(x, y, rb.velocity.y);
 
         if (coll.onWall && Input.GetButton("Fire3") && canMove)
         {
-            if(side != coll.wallSide)
+            if(side != coll.wallSide && anim)
                 anim.Flip(side*-1);
             wallGrab = true;
             wallSlide = false;
@@ -110,7 +110,7 @@ public class Movement : MonoBehaviour
 
         if (Input.GetButtonDown("Jump"))
         {
-            anim.SetTrigger("jump");
+            if (anim) anim.SetTrigger("jump");
 
             if (coll.onGround)
                 Jump(Vector2.up, false);
@@ -143,12 +143,12 @@ public class Movement : MonoBehaviour
         if(x > 0)
         {
             side = 1;
-            anim.Flip(side);
+            if (anim) anim.Flip(side);
         }
         if (x < 0)
         {
             side = -1;
-            anim.Flip(side);
+            if (anim) anim.Flip(side);
         }
 
 
@@ -159,9 +159,9 @@ public class Movement : MonoBehaviour
         hasDashed = false;
         isDashing = false;
 
-        side = anim.sr.flipX ? -1 : 1;
+        if (anim) side = anim.sr.flipX ? -1 : 1;
 
-        jumpParticle.Play();
+        if (jumpParticle != null) jumpParticle.Play();
     }
 
     private void Dash(float x, float y)
@@ -172,7 +172,7 @@ public class Movement : MonoBehaviour
 
         hasDashed = true;
 
-        anim.SetTrigger("dash");
+        if (anim) anim.SetTrigger("dash");
 
         rb.velocity = Vector2.zero;
         Vector2 dir = new Vector2(x, y);
@@ -214,7 +214,7 @@ public class Movement : MonoBehaviour
         if ((side == 1 && coll.onRightWall) || side == -1 && !coll.onRightWall)
         {
             side *= -1;
-            anim.Flip(side);
+            if (anim) anim.Flip(side);
         }
 
         StopCoroutine(DisableMovement(0));
@@ -230,7 +230,7 @@ public class Movement : MonoBehaviour
     private void WallSlide()
     {
         if(coll.wallSide != side)
-         anim.Flip(side * -1);
+            if (anim) anim.Flip(side * -1);
 
         if (!canMove)
             return;
@@ -265,13 +265,19 @@ public class Movement : MonoBehaviour
 
     private void Jump(Vector2 dir, bool wall)
     {
-        slideParticle.transform.parent.localScale = new Vector3(ParticleSide(), 1, 1);
-        ParticleSystem particle = wall ? wallJumpParticle : jumpParticle;
+        if (slideParticle != null) slideParticle.transform.parent.localScale = new Vector3(ParticleSide(), 1, 1);
+        if (wallJumpParticle != null)
+        {
+            if (jumpParticle != null)
+            {
+                ParticleSystem particle = wall ? wallJumpParticle : jumpParticle;
 
+                particle.Play();
+            }
+        }
         rb.velocity = new Vector2(rb.velocity.x, 0);
         rb.velocity += dir * jumpForce;
 
-        particle.Play();
     }
 
     IEnumerator DisableMovement(float time)
@@ -288,16 +294,19 @@ public class Movement : MonoBehaviour
 
     void WallParticle(float vertical)
     {
-        var main = slideParticle.main;
+        if (slideParticle != null)
+        {
+            var main = slideParticle.main;
 
-        if (wallSlide || (wallGrab && vertical < 0))
-        {
-            slideParticle.transform.parent.localScale = new Vector3(ParticleSide(), 1, 1);
-            main.startColor = Color.white;
-        }
-        else
-        {
-            main.startColor = Color.clear;
+            if (wallSlide || (wallGrab && vertical < 0))
+            {
+                slideParticle.transform.parent.localScale = new Vector3(ParticleSide(), 1, 1);
+                main.startColor = Color.white;
+            }
+            else
+            {
+                main.startColor = Color.clear;
+            }
         }
     }
 

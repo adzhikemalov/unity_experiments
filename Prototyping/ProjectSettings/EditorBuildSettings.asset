@@ -6,15 +6,84 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Start.unity
+    path: Assets/Scenes/start_01.unity
     guid: 86428c9e8f5816a4fb5389d0b8721c48
   - enabled: 1
-    path: Assets/Scenes/celeste.unity
+    path: Assets/Scenes/brick_03.unity
+    guid: 307d96b905c43604b9efbd1600feb0ee
+  - enabled: 1
+    path: Assets/Scenes/celeste_04.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/godofwar.unity
+    path: Assets/Scenes/celeste_05.unity
+    guid: 101665a21eb82194b8b642913b565bf1
+  - enabled: 1
+    path: Assets/Scenes/godofwar_06.unity
     guid: da3a89b105eb8f549af6ee2ee39a5198
   - enabled: 1
-    path: Assets/Scenes/valley.unity
-    guid: 23b70e74ace50f8429670a333955c2a9
+    path: Assets/Scenes/slide_07.unity
+    guid: 53d382fa14b663b4dabe5a55cc040a96
+  - enabled: 1
+    path: Assets/Scenes/slide_08.unity
+    guid: ee630cac0a5caf848bcaf7d673a1ec41
+  - enabled: 1
+    path: Assets/Scenes/slide_09.unity
+    guid: b0b10ac50fc65ae418703d0311c3289d
+  - enabled: 1
+    path: Assets/Scenes/godofwar_10.unity
+    guid: 1f9d829d8792dba4ca2bd6aa3015f07d
+  - enabled: 1
+    path: Assets/Scenes/slide_11.unity
+    guid: b91ef1d15cfbb6847b501f5f4074a738
+  - enabled: 1
+    path: Assets/Scenes/slide_12.unity
+    guid: 4db599e085b9b9e48a5f6b6377fe2d0b
+  - enabled: 1
+    path: Assets/Scenes/godofwar_13.unity
+    guid: 972c82df85748ce47add94d1db78c03e
+  - enabled: 1
+    path: Assets/Scenes/slide_14.unity
+    guid: 804f6783affff284eb60d6ec818619da
+  - enabled: 1
+    path: Assets/Scenes/slide_15.unity
+    guid: 69ce7334ec518f2419cbd6b7d842586e
+  - enabled: 1
+    path: Assets/Scenes/godofwar_16.unity
+    guid: 7b792ba0e2c62864abcdd9a8c82d2862
+  - enabled: 1
+    path: Assets/Scenes/slide_17.unity
+    guid: 5f20bb2e2d49df24ea7f13e525922c8d
+  - enabled: 1
+    path: Assets/Scenes/slide_18.unity
+    guid: 3612ace12c2a3d044bf1af3c44bb5780
+  - enabled: 1
+    path: Assets/Scenes/slide_19.unity
+    guid: 448a827f74ba10b4b80f43a6033f2287
+  - enabled: 1
+    path: Assets/Scenes/video_20.unity
+    guid: 3782133c2a1ef6f43b48b8e9aed171a9
+  - enabled: 1
+    path: Assets/Scenes/video_21.unity
+    guid: 6c90716688d5c594ba56cbca5b16f582
+  - enabled: 1
+    path: Assets/Scenes/video_22.unity
+    guid: 9372634946c6811479b88fbe96ac5643
+  - enabled: 1
+    path: Assets/Scenes/slide_23.unity
+    guid: e214958532c52ac428d7e0018332b312
+  - enabled: 1
+    path: Assets/Scenes/slide_24.unity
+    guid: 22fd7d4f1c3ab6a4eb80d8e0d4e615ca
+  - enabled: 1
+    path: Assets/Scenes/video_25.unity
+    guid: daf0f42fe80eeea44af7149c82cb45bf
+  - enabled: 1
+    path: Assets/Scenes/slide_26.unity
+    guid: 62d671816135abc48a51ab4083849fa4
+  - enabled: 1
+    path: Assets/Scenes/slide_27.unity
+    guid: 97e0a69cf82e85d44b8dcf0d00203fbb
+  - enabled: 1
+    path: Assets/Scenes/slide_28.unity
+    guid: 6e28a09c018eef941b7bad0fa6d94ae4
   m_configObjects: {}

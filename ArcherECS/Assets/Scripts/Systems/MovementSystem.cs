@@ -1,4 +1,5 @@
 using Components;
+using DefaultNamespace;
 using Unity.Entities;
 using Unity.Mathematics;
 using Unity.Transforms;

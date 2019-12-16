@@ -17,5 +17,13 @@ public class BreakBoxScript : MonoBehaviour
             rb.AddExplosionForce(150, transform.position, 30);
         }
         Destroy(gameObject);
+
+        var gp = GameObject.Find("SceneSelector");
+        if (gp)
+        {
+            var sc = gp.GetComponent<SceneSelector>();
+            if (sc)
+                sc.LoadNextScene();
+        }
     }
 }

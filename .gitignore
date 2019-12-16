@@ -4,3 +4,5 @@ obj/
 bin/
 .idea/
 Bullet/.idea
+*.mp4
+*.mkv
