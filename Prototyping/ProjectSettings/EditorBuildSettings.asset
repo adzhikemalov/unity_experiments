@@ -81,9 +81,6 @@ EditorBuildSettings:
     path: Assets/Scenes/slide_26.unity
     guid: 62d671816135abc48a51ab4083849fa4
   - enabled: 1
-    path: Assets/Scenes/slide_27.unity
-    guid: 97e0a69cf82e85d44b8dcf0d00203fbb
-  - enabled: 1
     path: Assets/Scenes/slide_28.unity
     guid: 6e28a09c018eef941b7bad0fa6d94ae4
   m_configObjects: {}
