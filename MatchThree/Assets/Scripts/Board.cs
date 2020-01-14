@@ -45,4 +45,5 @@ public class Board : MonoBehaviour, IDeclareReferencedPrefabs, IConvertGameObjec
         };
         dstManager.AddComponentData(entity, boardData);
     }
+    
 }
