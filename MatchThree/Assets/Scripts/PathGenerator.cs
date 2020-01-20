@@ -67,7 +67,6 @@ namespace Systems.PathGeneration
             }
             connections.Add(connection);
             _connections[node] = connections;
-            possibleNode.Connected = true;
         }
 
         private List<Node> GetPossibleNodes(Node node)

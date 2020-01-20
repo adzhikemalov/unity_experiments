@@ -17,21 +17,21 @@ namespace Systems
             public Unity.Mathematics.Random Random;
             public void Execute(Entity entity, int index, ref BoardData board)
             {
-//                for (int i = 0; i < board.width; i++)
-//                {
-//                    for (int j = 0; j < board.height; j++)
-//                    {
-//                        var type = Random.NextInt(1, 4);
-//                        var instance = CommandBuffer.Instantiate(index, GetPrefab(board, type));
-//                        CommandBuffer.SetComponent(index, instance, new Translation{Value = new float3(i-board.width/2, j-board.height/2, 0)});
-//                        CommandBuffer.SetComponent(index, instance, new BoardPositionComponent{GridPosition = new int2(i, j)});
-//                        CommandBuffer.AddComponent(index, instance, new SimpleSphereColliderComponent{radius = 0.5f});
-//                        CommandBuffer.AddComponent(index, instance, new PieceDataComponent {Type = type});
-//                        CommandBuffer.AddComponent(index, instance, new CanSelectComponent());
-//                    }
-//                }
-//                
-//                CommandBuffer.DestroyEntity(index, entity);
+                for (int i = 0; i < board.width; i++)
+                {
+                    for (int j = 0; j < board.height; j++)
+                    {
+                        var type = Random.NextInt(1, 4);
+                        var instance = CommandBuffer.Instantiate(index, GetPrefab(board, type));
+                        CommandBuffer.SetComponent(index, instance, new Translation{Value = new float3(i-board.width/2, j-board.height/2, 0)});
+                        CommandBuffer.SetComponent(index, instance, new BoardPositionComponent{GridPosition = new int2(i, j)});
+                        CommandBuffer.AddComponent(index, instance, new SimpleSphereColliderComponent{radius = 0.5f});
+                        CommandBuffer.AddComponent(index, instance, new PieceDataComponent {Type = type});
+                        CommandBuffer.AddComponent(index, instance, new CanSelectComponent());
+                    }
+                }
+                
+                CommandBuffer.DestroyEntity(index, entity);
             }
         
             private static Entity GetPrefab(BoardData board, int type)
